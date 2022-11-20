@@ -1,0 +1,99 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+label.required::before {
+  content: '*';
+  color: red;
+  font-size: 1.4rem;
+  position: relative;
+  vertical-align: middle;
+  bottom: -0.15em;
+  margin: 0.4em;
+  line-height: 5px;
+}
+
+label::after {
+  content: ':';
+}
+
+input,
+textarea,
+select {
+  font-size: 1.15em;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #333;
+  padding: 0.6em 1em;
+  border: 2px solid #eee;
+  border-radius: 6px;
+}
+
+.field-error {
+  border: 2px solid rgb(247, 149, 149);
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: silver;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.separation {
+  padding: 0 1em;
+  font-size: 2em;
+  font-weight: 100;
+  color: rgb(230, 230, 230);
+  position: relative;
+  bottom: -0.08em;
+}
+
+a,
+button,
+input[type='submit'] {
+  background: none;
+  text-decoration: underline;
+  color: rgb(99, 99, 245);
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+a:hover,
+button:hover,
+input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  font-size: 1.1rem;
+  background: gray;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 0.6em 1.2em;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: rgb(89, 89, 227);
+  border: 1px solid rgb(89, 89, 227);
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: rgb(99, 99, 245);
+}

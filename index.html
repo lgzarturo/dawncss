@@ -70,5 +70,21 @@
         </p>
       </aside>
     </main>
+    <form action="">
+      <fieldset class="mb-2">
+        <label for="name" class="required">Name</label>
+        <input type="text" id="name" placeholder="Put your name, here!" />
+      </fieldset>
+      <fieldset class="mb-2">
+        <label for="company" class="required">Company</label>
+        <input type="text" id="company" class="field-error" placeholder="Name of your company" />
+      </fieldset>
+      <fieldset class="mb-2">
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Please, describe your request"></textarea>
+      </fieldset>
+      <a href="#" class="btn btn-link">Cancel</a><small class="separation">|</small>
+      <button class="btn btn-primary" type="submit">Send</button>
+    </form>
   </body>
 </html>

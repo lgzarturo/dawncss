@@ -1,4 +1,6 @@
 @import './reset.css';
+@import './grid.css';
 @import './text.css';
 @import './basic.css';
+@import './forms.css';
 @import './responsive.css';
