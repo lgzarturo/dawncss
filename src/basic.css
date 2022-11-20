@@ -2,7 +2,7 @@
   font-size: 2em;
   font-weight: 100;
   font-style: italic;
-  font-family: sans;
+  font-family: var(--serif-font);
 }
 
 main {
@@ -11,7 +11,12 @@ main {
 }
 
 main > * {
-  padding: 0.3rem;
+  padding: 1rem;
   margin: 0.9rem;
-  background-color: #9edafa;
+  background-color: var(--accent-bg);
+  border-radius: var(--radius);
+}
+
+main p {
+  margin: 0;
 }

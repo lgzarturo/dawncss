@@ -6,6 +6,7 @@ fieldset {
 label {
   font-weight: bolder;
   font-size: 0.9rem;
+  margin-left: 1em;
 }
 
 label.required::before {
@@ -32,7 +33,7 @@ select {
   color: #333;
   padding: 0.6em 1em;
   border: 2px solid #eee;
-  border-radius: 6px;
+  border-radius: var(--radius);
 }
 
 .field-error {
@@ -59,41 +60,89 @@ textarea {
 }
 
 a,
+a button,
 button,
-input[type='submit'] {
+[role='button'],
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  border: none;
+  border-radius: var(--radius);
   background: none;
   text-decoration: underline;
-  color: rgb(99, 99, 245);
+  color: var(--accent);
   cursor: pointer;
   margin: 0;
   padding: 0;
   display: inline;
+  transition: 0.4s;
 }
 
 a:hover,
+a button:hover,
 button:hover,
-input[type='submit']:hover {
+[role='button']:hover,
+input[type='submit']:hover input[type='reset']:hover,
+input[type='button']:hover {
   opacity: 0.8;
+}
+
+.disabled,
+a button[disabled],
+button[disabled],
+[role='button'][aria-disabled='true'],
+input[type='submit'][disabled],
+input[type='reset'][disabled],
+input[type='button'][disabled],
+input[type='checkbox'][disabled],
+input[type='radio'][disabled],
+select[disabled] {
+  cursor: default;
+  opacity: 0.5;
+  cursor: not-allowed;
+  transition: 0.5s;
+  text-decoration: none !important;
+  pointer-events: none;
+}
+
+.disabled:hover,
+a button[disabled]:hover,
+button[disabled]:hover,
+[role='button'][aria-disabled='true']:hover,
+input[type='submit'][disabled]:hover,
+input[type='reset'][disabled]:hover,
+input[type='button'][disabled]:hover,
+input[type='checkbox'][disabled]:hover,
+input[type='radio'][disabled]:hover,
+select[disabled]:hover {
+  opacity: 0.5;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+  cursor: not-allowed;
+  background-color: var(--disabled);
 }
 
 .btn {
   font-size: 1.1rem;
   background: gray;
   border: 1px solid darkgray;
-  border-radius: 6px;
+  border-radius: var(--radius);
   padding: 0.6em 1.2em;
   color: white;
   text-decoration: none;
 }
 
 .btn-primary {
-  background: rgb(89, 89, 227);
-  border: 1px solid rgb(89, 89, 227);
+  background: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .btn-link {
   background: none;
   border: none;
   text-decoration: underline;
-  color: rgb(99, 99, 245);
+  color: var(--accent);
 }
