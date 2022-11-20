@@ -1,0 +1,34 @@
+/* small(sm) */
+@media screen and (max-width: 765px) {
+  body {
+    border: 10px solid green;
+  }
+}
+
+/* medium(md) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    border: 10px solid red;
+  }
+}
+
+/* normal(nm) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    border: 10px solid yellow;
+  }
+}
+
+/* large(lg) */
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  body {
+    border: 10px solid blue;
+  }
+}
+
+/* big(bg) */
+@media screen and (min-width: 1536px) {
+  body {
+    border: 10px solid rgb(255, 0, 115);
+  }
+}

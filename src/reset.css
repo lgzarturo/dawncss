@@ -94,12 +94,3 @@ hr {
   border-top: 1px solid rgb(236, 236, 236);
   height: 1.6rem;
 }
-
-/* Text */
-
-.formula {
-  font-size: 2em;
-  font-weight: 100;
-  font-style: italic;
-  font-family: sans;
-}

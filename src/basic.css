@@ -1,0 +1,17 @@
+.formula {
+  font-size: 2em;
+  font-weight: 100;
+  font-style: italic;
+  font-family: sans;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > * {
+  padding: 0.3rem;
+  margin: 0.9rem;
+  background-color: #9edafa;
+}
