@@ -1,0 +1,28 @@
+.alert {
+  width: 100%;
+  position: relative;
+  padding: 1.25em 1.318em;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.alert-success {
+  background-color: var(--green);
+  color: var(--green-dark);
+}
+
+.alert-error {
+  background-color: var(--red);
+  color: var(--red-dark);
+}
+
+.alert-info {
+  background-color: var(--blue);
+  color: var(--blue-dark);
+}
+
+.alert-warning {
+  background-color: var(--yellow);
+  color: var(--yellow-dark);
+}

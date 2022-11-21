@@ -27,6 +27,29 @@
   h6 {
     font-size: 1.14rem;
   }
+
+  fieldset {
+    min-inline-size: 100%;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='url'],
+  input[type='number'],
+  input[type='email'],
+  input[type='tel'],
+  input[type='search'],
+  input[type='file'],
+  input[type='range'],
+  input[type='date'],
+  input[type='month'],
+  input[type='week'],
+  input[type='datetime'],
+  input[type='datetime-local'],
+  select {
+    display: block;
+    width: 100%;
+  }
 }
 
 /* medium(md) */

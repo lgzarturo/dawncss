@@ -5,8 +5,9 @@
     "Times New Roman", serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --base-font-size: 1.15rem;
+  --golden-ratio: 1.618;
   --header-scale: 1.25;
-  --line-height: 1.618;
+  --line-height: var(--golden-ratio);
   --line-height-paragraph: 1.618em;
   --bg: #fff;
   --accent-bg: #f5f7ff;
@@ -20,7 +21,37 @@
   --preformatted: #444;
   --marked: #33ff36;
   --disabled: #efefef;
+  --success: #23d160;
+  --error: #ff3860;
+  --info: #209cee;
+  --warning: #ffdd57;
+  --blue: #1fb6ff;
+  --blue-dark: #0e5578;
+  --purple: #7e5bef;
+  --indigo: #6610f2;
+  --gray: #8492a6;
+  --gray-light: #d3dce6;
+  --gray-dark: #273444;
+  --cyan: #0dcaf0;
+  --teal: #20c997;
+  --green: #198754;
+  --green-dark: #0a3a24;
+  --yellow: #ffc82c;
+  --yellow-dark: #7e6317;
+  --orange: #ff7849;
+  --red: #dc3545;
+  --red-dark: #751b24;
+  --pink: #d63384;
+  --black: #222;
+  --white: #fff;
   --radius: 6px;
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+  --spacing-6: 48px;
+  --spacing-7: 64px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -77,7 +108,7 @@
 }
 
 :where(fieldset) {
-  border: 1px solid #a0a0a0;
+  border: 1px solid var(--gray-light);
   border-radius: var(--radius);
 }
 
@@ -88,6 +119,7 @@
 :where(textarea) {
   margin: 0;
   resize: vertical;
+  width: 100%;
 }
 
 :where([type="search" i]) {
@@ -117,9 +149,9 @@
 /* Interactive */
 
 :where(dialog) {
-  background-color: white;
+  background-color: var(--white);
   border: solid;
-  color: black;
+  color: var(--black);
   height: -moz-fit-content;
   height: fit-content;
   left: 0;
@@ -227,6 +259,7 @@ fieldset p {
 
 legend {
   padding: 0.2rem;
+  margin-left: 16px;
 }
 
 ol,

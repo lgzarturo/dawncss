@@ -21,3 +21,17 @@ h5 {
 h6 {
   font-size: 1.63rem;
 }
+
+article header h1,
+article header h2,
+article header h3,
+article header h4,
+article header h5,
+article header h6 {
+  line-height: calc(var(--line-height) * 1.12);
+  font-weight: 100;
+}
+
+.lead {
+  font-size: var(--font-size * 1.618);
+}

@@ -11,7 +11,7 @@ label {
 
 label.required::before {
   content: '*';
-  color: red;
+  color: var(--red);
   font-size: 1.4rem;
   position: relative;
   vertical-align: middle;
@@ -27,23 +27,23 @@ label::after {
 input,
 textarea,
 select {
-  font-size: 1.15em;
+  font-size: calc(val(--font-size) * 1.12);
   font-family: sans-serif;
   font-weight: 100;
-  color: #333;
+  color: var(--black);
   padding: 0.6em 1em;
-  border: 2px solid #eee;
+  border: 2px solid var(--border);
   border-radius: var(--radius);
 }
 
 .field-error {
-  border: 2px solid rgb(247, 149, 149);
+  border: 2px solid var(--red);
 }
 
 input::placeholder,
 textarea::placeholder,
 select::placeholder {
-  color: silver;
+  color: var(--gray-light);
 }
 
 textarea {
@@ -54,7 +54,7 @@ textarea {
   padding: 0 1em;
   font-size: 2em;
   font-weight: 100;
-  color: rgb(230, 230, 230);
+  color: var(--gray-light);
   position: relative;
   bottom: -0.08em;
 }
@@ -118,6 +118,12 @@ select[disabled]:hover {
   opacity: 0.5;
 }
 
+input[type='color'] {
+  padding: 0;
+  width: 38px;
+  height: 38px;
+}
+
 input:disabled,
 textarea:disabled,
 select:disabled {
@@ -127,11 +133,11 @@ select:disabled {
 
 .btn {
   font-size: 1.1rem;
-  background: gray;
-  border: 1px solid darkgray;
+  background: var(--gray);
+  border: 1px solid var(--gray-dark);
   border-radius: var(--radius);
   padding: 0.6em 1.2em;
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 

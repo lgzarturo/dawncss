@@ -20,3 +20,29 @@ main > * {
 main p {
   margin: 0;
 }
+
+table {
+  table-layout: fixed;
+  border-spacing: 0.125rem 0.125rem;
+  border-collapse: collapse;
+  width: 100%;
+  display: table;
+  border-color: var(--gray);
+}
+
+table caption {
+  font-size: calc(var(--base-font-size) * 1.25);
+  margin-top: calc(var(--spacing-5) * var(--golden-ratio));
+}
+
+table thead tr th {
+  border-width: 0 0 2px;
+}
+
+table td {
+  font-size: calc(var(--base-font-size) * 0.85);
+  border: 1px solid var(--gray-light);
+  border-width: 0 0 1px;
+  padding: 0.5em 0.75em;
+  vertical-align: top;
+}
